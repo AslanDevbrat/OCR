@@ -1,0 +1,16 @@
+amount: 20
+location: 
+      hindi: पंजाब
+      english: Punjab
+affidavit_number: F 435489
+content_intro: \lipsum[1]
+content_main: 
+    Point 1: \textbf{\lipsum[1][2]}
+    Point 2: \lipsum[1][1]
+    Point 3: \lipsum[1][3]
+    Point 4: \lipsum[1][4]
+    Point 5: \textbf{Hello}
+content_end: \lipsum[2][1-2]
+
+
+
