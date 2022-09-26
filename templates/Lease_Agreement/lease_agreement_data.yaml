@@ -1,0 +1,39 @@
+current_city : Chennai
+current_state : Tamil Nadu
+landlord_name : Modi
+landlord_address_line1 : 5th floor
+landlord_name_line2 : MDM Enclave, Gandhi Road
+landlord_city : Chennai
+landlord_state : Tamil Nadu
+landlord_pincode : 600009
+
+tenant_name : kejriwal
+tenant_address_line1 : Room number 5
+tenant_address_line2 : SSB Block, IIT Madras
+tenant_city : Chennai
+tenant_state : Tamil Nadu
+tenant_pincode : 600069
+
+lease_property_address : Room 1001, Floor 25, Sunshine tower, Bloack A, Ram Marg, Noida, Delhi 409832
+
+property_type : Apartment
+notice_dutation : one month
+
+no_of_bedrooms : 5
+no_of_bathrooms : 5
+no_of_carparks : 3
+starting_meter_reading : 78 units
+
+area_of_property : 5000 sq. feet
+lease_start_date : 30 Feb 2023
+monthly_rent_in_number : Rs. 60000
+monthly_rent_in_words : Rs. Six Thousand only
+monhlty_rent_day : 1st day
+rental_deposit_in_number : Rs 100000
+rental_deposit_in_words : Rs one lakh only
+
+witness_1_name : Felix
+witness_1_address : Portuguese Church Street, Seven Wells North, George Town, Chennai, Tamil Nadu 600001
+
+witness_2_name : Sam
+witness_2_address : Mavalli, Bengaluru, Karnataka 560004
