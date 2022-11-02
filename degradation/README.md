@@ -272,3 +272,14 @@ degrade.save(newimg, "newdocimg.jpg")
     * iterations:
         * measure of degradation effect
         * default: 5
+
+## make_old
+
+* Applies old paper pattern on given image
+* Appears like a real world old document
+* Parameters:
+    * img:
+        * type: image file
+    * old_pattern:
+        * type: image file
+        * collection of related images: https://unsplash.com/collections/68905957/paper-texture

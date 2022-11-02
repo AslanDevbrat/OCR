@@ -208,7 +208,7 @@ class degrade:
         return result
 
 
-    def degrade_stamp(img, kernel=np.ones((3, 3)), iterations=5):
+    def degrade_stamp(self, img, kernel=np.ones((3, 3)), iterations=5):
         quadrant = random.choice([1, 2, 3, 4])
         img_h, img_w, _ = img.shape
 
@@ -231,4 +231,25 @@ class degrade:
         img[h1: h2, w1: w2] = imgpart
         
         img = cv2.erode(img, kernel=kernel, iterations=iterations)
+        return img
+
+    
+    def make_old(self, img, old_pattern):
+        # add alpha channel to img if old_pattern has alpha
+        if old_pattern.shape[2] == 4: img = cv2.cvtColor(img, cv2.COLOR_RGB2RGBA)
+
+        # making img and old_pattern dtype same
+        old_pattern = old_pattern.astype(img.dtype)
+
+        # size of image and old_pattern
+        h_old_pattern, w_old_pattern, _ = old_pattern.shape
+        h_img, w_img, _ = img.shape
+
+        # down-scaling old_pattern if larger than img
+        if w_img != w_old_pattern or h_img != h_watermark:
+            old_pattern = cv2.resize(old_pattern, (w_img, h_img), interpolation=cv2.INTER_AREA)
+
+        # overlaying old_pattern on image
+        img = cv2.addWeighted(img, 0.5, old_pattern, 0.5, 0.5)
+
         return img
